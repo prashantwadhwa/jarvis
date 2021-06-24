@@ -72,7 +72,7 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login(input(), input())
+    server.login(input("youremail@email.com"), input("your password"))
     server.sendmail(input(), to, content)
     server.close
 
@@ -215,4 +215,4 @@ if __name__ == "__main__":
         elif 'exit' in query:
             speak("Thanks for giving me your time, it was great talking to you!!")
             break        
-        # breaks wrks here only
+        
