@@ -213,7 +213,7 @@ if __name__ == "__main__":
             speak("I'm not sure about that, may be you should give me some time")
 
         elif "I love You" in query:
-            speak("I love you too but as a freind :)")
+            speak("I love you too but as a freind")
         
         elif 'exit' in query:
             speak("Thanks for giving me your time, it was great talking to you!!")
