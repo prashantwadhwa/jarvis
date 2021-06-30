@@ -31,6 +31,12 @@ food_y = random.randint(20, (screen_height/2))
 score = 0
 init_velocity = 5
 clock = pygame.time.Clock()
+font = pygame.font.SysFont(None, 55, bold=True, italic=False)
+
+def screen_score(text, color, x, y):
+    screen_score = pygame.font.render(text, True, color)
+    gameWindow.blit(screen_score, [[x,y]])
+
 
 velocity_x = 0
 velocity_y = 0
